@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Parallex Jungle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header  id="nav">
+    <a href="" class="logo">portfolio</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="moon.png" id="moon" style="pointer-events: none;">
+        <img src="main land.png" id="bg" style="pointer-events: none;">
+        <h2 id="text">Urvish Patel</h2>
+        <a href="https://www.instagram.com/patel_urvish_0706/" target='_blank' id="btn">CONNECT</a>
+        <img src="land2.png" id="land" style="pointer-events: none;">
+        </section>
+
+    <div class="sec" id="sec">
+        <h2>The Parallax portfolio</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto neque molestiae maiores deleniti, ex, officiis nisi dolore, optio quibusdam quas quaerat dignissimos magni recusandae nobis voluptatibus quia corporis vero corrupti.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, architecto. Iste modi porro quisquam vero ratione. Aspernatur repudiandae blanditiis nam sunt natus dignissimos ad, non sed necessitatibus labore in ipsam?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eius dolores itaque ea reiciendis quas. Adipisci magni, odit eaque obcaecati fugit eveniet quo voluptatibus dolores, nemo provident hic accusantium. Debitis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptates nostrum autem temporibus. Impedit quos voluptatem et ea harum labore consequuntur, provident architecto, suscipit saepe delectus doloremque. Veniam, tempora asperiores.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, illo dolorum. Nulla nam similique et blanditiis vero delectus adipisci iusto voluptatem odit, officiis in vitae quod nostrum molestiae ullam non.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, molestiae eius. Nam similique assumenda et nulla fuga minima ducimus, eaque vero voluptatibus iusto quae, quidem sunt cum illum labore velit.
+        </p><br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto neque molestiae maiores deleniti, ex, officiis nisi dolore, optio quibusdam quas quaerat dignissimos magni recusandae nobis voluptatibus quia corporis vero corrupti.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, architecto. Iste modi porro quisquam vero ratione. Aspernatur repudiandae blanditiis nam sunt natus dignissimos ad, non sed necessitatibus labore in ipsam?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eius dolores itaque ea reiciendis quas. Adipisci magni, odit eaque obcaecati fugit eveniet quo voluptatibus dolores, nemo provident hic accusantium. Debitis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptates nostrum autem temporibus. Impedit quos voluptatem et ea harum labore consequuntur, provident architecto, suscipit saepe delectus doloremque. Veniam, tempora asperiores.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, illo dolorum. Nulla nam similique et blanditiis vero delectus adipisci iusto voluptatem odit, officiis in vitae quod nostrum molestiae ullam non.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, molestiae eius. Nam similique assumenda et nulla fuga minima ducimus, eaque vero voluptatibus iusto quae, quidem sunt cum illum labore velit.
+        </p><br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto neque molestiae maiores deleniti, ex, officiis nisi dolore, optio quibusdam quas quaerat dignissimos magni recusandae nobis voluptatibus quia corporis vero corrupti.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, architecto. Iste modi porro quisquam vero ratione. Aspernatur repudiandae blanditiis nam sunt natus dignissimos ad, non sed necessitatibus labore in ipsam?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eius dolores itaque ea reiciendis quas. Adipisci magni, odit eaque obcaecati fugit eveniet quo voluptatibus dolores, nemo provident hic accusantium. Debitis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptates nostrum autem temporibus. Impedit quos voluptatem et ea harum labore consequuntur, provident architecto, suscipit saepe delectus doloremque. Veniam, tempora asperiores.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, illo dolorum. Nulla nam similique et blanditiis vero delectus adipisci iusto voluptatem odit, officiis in vitae quod nostrum molestiae ullam non.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, molestiae eius. Nam similique assumenda et nulla fuga minima ducimus, eaque vero voluptatibus iusto quae, quidem sunt cum illum labore velit.
+        </p><br><br><br>
+
+        <div class="cc" :: -webkit-user-select: none;>
+            © 2023 Gujrat IND, Inc. All rights reserved by Urvish Patel.
+        </div>
+    </div>
+
+    <script>
+        let moon = document.getElementById('moon');
+        let bg = document.getElementById('bg');
+        let land = document.getElementById('land');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let nav = document.getElementById('nav');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            moon.style.top = value * 0.70 + "px";
+            bg.style.top = value * 0.5 + "px";
+            land.style.top = value * 0 + "px";
+            text.style.marginTop = value * 1.25 + "px";
+            btn.style.marginTop = value * 1.25 + "px";
+            nav.style.marginTop = value * 0.70 + "px";
+        })
+    </script>
+
+    
+
+</body>
+</html>

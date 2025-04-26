@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    
+}  
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#FFE0D2,#ffffff);
+    /* #FFd1d1 */
+
+    
+  -ms-overflow-style: none;
+   scrollbar-width: none;
+}
+
+header
+{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    overflow-x: hidden;
+}
+
+header .logo
+{
+    color: #0000009f;
+    font-family: 'Sacramento', cursive;;
+    font-weight: 500;
+    text-shadow: 0px 0px 2px #3A406C;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform:none;
+    letter-spacing: 2px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20PX;
+} 
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000;
+    border-radius: 20px;
+}
+
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+    border-radius: 20px;
+}
+
+header ul li a:hover 
+{
+    background: #000000;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px  #00000035;
+
+}
+
+
+
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* pointer-events: none; */
+  
+}
+
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+#text
+{
+    position: absolute;
+    color: #0000007d;
+    white-space: nowrap;
+    font-size: 9vw;
+    z-index: 0;
+    text-shadow: 0px 0px 15px  #3A406c;
+}
+
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #0000007d;
+    color: #fff;
+    z-index: 0;
+    font-size: 1.4em;
+    transform: translateY(100px);
+    box-shadow: 0px 0px 10px  #0000007d;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#btn:hover
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #000;
+    color: #fff;
+    z-index: 0;
+    font-size: 1.6em;
+    transform: translateY(100px);
+    box-shadow: 0px 0px 10px  #0000007d;
+
+}
+
+.sec
+{   
+    color: #fff;
+    position: relative;
+    padding: 100px;
+    background: #40394F;
+}
+
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.sec p
+{
+    font-size: 1em;
+}
+
+.cc
+{
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    color: #000;
+    pointer-events: none;
+    background-color: #ffffff;
+
+}
+/*
+
+section img#land
+{
+ position: absolute;    height: 170%;
+    width: 100%;
+}
+
+ */
+
+
+
+/* prevent copy text 
+    
+.cc:: -webkit-user-select: none;
+.cc:: -moz-user-select: none;
+.cc:: -ms-user-select: none;
+.cc:: user-select: none;
+
+*/
+
+@media screen and (max-width: 700px) {
+    html{
+        font-size: 80%;
+    }
+
+    header{
+        /* margin-left: 0rem; */
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .logo
+    {
+        font-size: 3rem;
+    }
+
+    header ul li
+    {
+        padding: 0rem;
+        margin: 0.2rem;
+        padding-top: 2rem;
+    }
+
+    section
+    {
+        height: 550px;
+    }
+
+    .sec
+    {
+        padding: 3rem;
+    }
+
+    .sec h2
+    {
+        font-size: 2rem;
+    }
+
+
+
+    #text
+    {
+        position: absolute;
+        color: #0000007d;
+        white-space: nowrap;
+        /* font-size: vw; */
+        z-index: 0;
+        text-shadow: 0px 0px 15px  #3A406c;
+    }
+
+    
+    section img#land
+    {
+        /* position: absolute; */
+        height: 100%;
+        width: 100%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 360px){
+    header ul li a
+    {
+        font-size: 1vw;
+        font-weight: 600px;
+        
+
+    }
+    section
+    {
+        height: 400px;
+    }
+}
